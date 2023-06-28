@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // jsonplaceholder: 'https://jsonplaceholder.typicode.com',
-      base: 'https://jsonplaceholder.typicode.com',
+      baseURL: 'https://jsonplaceholder.typicode.com',
     }
   },
 })
