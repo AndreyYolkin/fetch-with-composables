@@ -1,5 +1,5 @@
 import { defineStore } from "pinia"
-import { useAPI } from "@/composables/useAPI";
+import { useSportsAPI } from "composables/useSportsAPI";
 
 export const useSportsStore = defineStore("sports", {
     state: () => ({
@@ -7,7 +7,7 @@ export const useSportsStore = defineStore("sports", {
     }),
     actions: {
         async getSports() {
-            const { getSports } = useAPI();
+            const { getSports } = useSportsAPI();
             this.sports = await getSports();
         }
     }

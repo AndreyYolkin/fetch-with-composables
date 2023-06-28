@@ -1,6 +1,6 @@
 import { useApiFetch } from './useApiFetch';
 
-export const useAPI = () => {
+export const useSportsAPI = () => {
     const { get } = useApiFetch();
     const getSports = async () => {
         const data = await get(`/posts`) as Array<object>;
